@@ -1,0 +1,332 @@
+
+/**基本格式开始***************/
+* {
+	/*word-break: break-all;*/
+}
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,textarea,p {
+	margin:0px;/*外边距*/
+	padding:0px;/*内边距*/
+	font-size:13px;/*设置不同的HTML元素的字体大小*/
+	font-family:Tahoma;/*指定段落的字体*/
+}
+ul {
+	list-style:none;/*在一个声明中指定所有列表属性 e.g. list-style:square url("sqpurple.gif"); <li>Coffee</li> */
+}
+img,a img {
+	border:none;/*指定一个元素边框的样式和颜色*/
+}
+a {
+	text-decoration:none;/*设置h1，h2，h3和h4元素文本装饰*/
+}
+a:hover {/*选择鼠标移到链接上的样式：*/
+	text-decoration:underline;
+}
+body {
+	background:#f4f4f4;
+	color:#333;
+}
+#top {
+	width:100%;
+	background:url(bg.jpg);
+	height:46px;
+	line-height:46px;/*使用百分比设置行高*/
+	position:fixed;/*fixed 定位,元素的位置相对于浏览器窗口是固定位置。*/
+	top:0px;/*top 属性规定元素的顶部边缘。该属性定义了一个定位元素的上外边距边界与其包含块上边界之间的偏移。*/
+	left:0px;
+}
+#top .logo {
+	width:140px;
+	color:#fff;
+	font-size:20px;/*字体大小*/
+	font-weight:bold;/*字粗*/
+	text-indent:10px;/*text-indent 属性规定文本块中首行文本的缩进。*/
+	float:left;/*一个浮动元素会尽量向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。*/
+}
+#top ul.nav {/*<nav> 标签定义导航链接的部分。*/
+	float:left;
+}
+#top ul.nav li {/*<li> 标签定义列表项目。*/
+	float:left;
+}
+#top ul.nav li a {
+	color:#b5d4ea;
+	padding:10px;
+}
+#top ul.nav li a:hover {
+	color:#fff;
+	text-decoration:none;
+}
+#top ul.nav li a.current {
+	font-weight:bold;
+}
+#top .login_info {
+	float:right;
+	color:#b5d4ea;
+	margin:0 30px 0 0;
+}
+#top .login_info a {
+	color:#b5d4ea;
+}
+#sidebar {
+	width:140px;
+	position:fixed;
+	top:46px;
+	left:0px;
+}
+#sidebar ul {
+	margin:10px 0 0 0;
+}
+#sidebar ul li div.small_title {
+	color:#333;
+	padding:4px 0 4px 15px;
+	font-weight:bold;/*字粗*/
+	background:#ddd;
+}
+#sidebar ul.child {
+	margin:3px 0 3px 0;
+}
+#sidebar ul li a {
+	color:#333;
+	display:block;
+	padding:4px 0 4px 28px;
+	/*background:url(bg.png) -265px 9px no-repeat;*/
+}
+#sidebar ul li a:hover {
+	text-decoration:none;
+	/*background:url(bg.png) -265px 9px no-repeat #e9e9e9;*/
+}
+#sidebar ul li a.current {
+	/*background:url(bg.png) -265px -11px no-repeat;*/
+}
+#main {
+	width:90%;
+	margin:57px 0 0 160px;
+}
+#main .title {
+	width:100%;
+	height:30px;
+	line-height:30px;
+	text-indent:10px;
+	background:#e6e6e6;
+	color:#666;
+	font-weight:bold;
+}
+#main .explain {
+	color:#000;
+	padding:14px 0;
+	background:url(hr.png) 0px bottom repeat-x;
+}
+#main .explain ul {
+	margin:0 0 0 20px;
+	line-height:160%;
+}
+#main .explain a {
+	color:#266aae;
+}
+#main .explain ul li {
+	color:#000;
+}
+#main a {
+	color:#266aae;
+}
+input {
+	border:1px solid #ccc;
+}
+input.sort {
+	width:50px;
+	height:20px;
+}
+input.btn {
+    border-radius:2px;
+    color: #fff;
+    font-family: inherit;
+    padding:4px 15px;
+    text-align: center;
+    background:url(btn.png) 0 -120px #1b75b6;
+    border:0px;
+}
+table.list tr {
+	height:50px;
+	background:url(hr.png) 0px bottom repeat-x;
+}
+table.list tr th {
+	padding-right:40px;
+	text-align:left;
+}
+table.list tr td {
+	padding-right:40px;
+	text-align:left;
+}
+table.au input {
+	width:300px;
+	height:25px;
+}
+table.au textarea {
+	width:300px;
+	height:100px;
+}
+table.au tr {
+	background:url(hr.png) 0px bottom repeat-x;
+}
+table.au tr td {
+	text-align:left;
+	padding:10px 40px 20px 0;
+}
+table.au tr td.condition {
+	color:#999;
+}
+
+/*江江*/
+li{
+	list-style:none;
+}
+/*
+.nav{
+	width:96%;
+	height:80px;
+	margin-left:2%;
+	border-bottom:1px solid #8d8d8d;
+	display:flex;
+}
+*/
+.navtitle{
+	width:100px;
+	height:80px;
+	margin-left:80px;
+	font-weight:bold;
+	text-align:center;
+}
+.navchoice{
+	width: 500px;
+	height:40px;
+	margin:10px;
+}
+.navchoice ul{
+	display:flex;
+	text-align:center;
+	font-size:18px;
+}
+.navchoice ul li{
+	width:100px;
+}
+.navchoice ul li a{
+	color:#000;
+	text-decoration:none;
+}
+.navchoice ul li a:visited{
+	color:#000;
+}
+.navchoice ul .notlast{
+	border-right:1px solid;
+}
+/*
+.main{
+	width:96%;
+	height:600px;
+	margin:2%;
+	border:1px solid #8d8d8d;
+	border-radius:20px;
+	position:relative;
+}
+*/
+.left-wrapper{
+	width:24%;
+	height:500px;
+	margin-top:50px;/*margin-top属性设置元素的上部边距。*/
+	border-right:1px solid #8d8d8d;
+	position:absolute;
+	left:0;
+	text-align:center;
+}
+
+.right-wrapper{
+	width:76%;
+	height:500px;
+	margin-top:50px;/*margin-top属性设置元素的上部边距。*/
+	position:absolute;
+	left:140px;
+}
+.right-wrapper-top{
+	position:absolute;
+	width:100%;
+	height:50px;
+}
+.right-wrapper select{
+	height: 30px;
+	border-radius:8px;
+}
+.right-wrapper .order{
+	position:absolute;
+	left:6%;
+	bottom:2px;
+}
+.right-wrapper .search{
+	color: #8d8d8d;
+	position:absolute;
+	right:6%;
+	bottom:2px;
+}
+.right-wrapper .search .searchbar{
+	width:180px;
+	height:30px;
+	border-radius:10px;
+	border:none;
+	background-color: #cccccc;
+	color:#414141;
+	font-size:14px;
+	text-indent:1em;
+}
+.right-wrapper .button{
+	width:80px;
+	height:30px;
+	border-radius:10px;
+	border:none;
+	color:#fff;
+	background-color: #23547D;
+}
+.right-wrapper .addbutton{
+	width:80px;
+	height:30px;
+	position:absolute;
+	right:10%;
+	border-radius:10px;
+	border:none;
+	color:#fff;
+	background-color: #23547D;
+	text-align:center;
+	font-size:14px;
+	line-height:30px;
+	text-decoration:none;
+}
+.showtable{
+	width:96%;
+	height:420px;
+	margin-left:3%;
+	margin-top:56px;
+}
+.showtable table{
+	width:100%;
+	text-align:center;
+	border-spacing:12px;
+}
+.showtable a{
+	text-decoration:none;
+}
+.showtable a:visited{
+	color:blue;
+}
+.pagenav{
+	width: 56%;
+	height: 22px;
+	color: #8d8d8d;
+	display:flex;
+	position:absolute;
+	left:44%;
+}
+.pagenav a{
+	text-decoration:none;
+}
+.pagenav img{
+	width: 20px;
+	height: 20px;
+}
